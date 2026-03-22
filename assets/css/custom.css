@@ -1,0 +1,179 @@
+/* ==========================================================================
+   MINIMALIST B&W + ACCENT THEME
+   Accent Color: #33FFA2
+   ========================================================================== */
+
+/* --- Base Variables & Body --- */
+:root {
+  --bs-primary: #33FFA2;
+  --bs-body-bg: #FFFFFF;
+  --bs-body-color: #000000;
+  --bs-link-color: #000000;
+  --bs-link-hover-color: #000000;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+
+h1 {
+  border-bottom: 4px solid #000000;
+  padding-bottom: 0.2em;
+  display: inline-block;
+}
+
+h2 {
+  border-bottom: 2px solid #33FFA2;
+  padding-bottom: 0.2em;
+}
+
+/* --- Links --- */
+a {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 2px solid #33FFA2;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #33FFA2;
+  color: #000000;
+}
+
+/* --- Buttons --- */
+.btn, .btn-primary, .btn-secondary {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 0; /* Sharp, minimalist corners */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  box-shadow: 4px 4px 0px #33FFA2; /* Intense accent shadow */
+  transition: all 0.1s ease;
+}
+
+.btn:hover, .btn-primary:hover, .btn-secondary:hover {
+  background-color: #33FFA2;
+  color: #000000;
+  border-color: #000000;
+  box-shadow: 2px 2px 0px #000000;
+  transform: translate(2px, 2px);
+}
+
+/* --- Quarto Callouts (The Note/Tip Boxes) --- */
+div.callout {
+  border: 2px solid #000000 !important;
+  border-radius: 0 !important;
+  border-left: 8px solid #33FFA2 !important;
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  box-shadow: none !important;
+}
+
+div.callout-header {
+  background-color: #f7f7f7 !important;
+  border-bottom: 2px solid #000000 !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
+div.callout-icon {
+  color: #000000 !important;
+}
+
+/* --- Navigation Bars (Top and Side) --- */
+.navbar {
+  background-color: #000000 !important;
+  border-bottom: 4px solid #33FFA2;
+}
+
+.navbar a.nav-link, .navbar-brand {
+  color: #FFFFFF !important;
+  border-bottom: none;
+}
+
+.navbar a.nav-link:hover {
+  color: #33FFA2 !important;
+  background-color: transparent;
+}
+
+.sidebar {
+  background-color: #FFFFFF !important;
+  border-right: 2px solid #000000;
+}
+
+.sidebar a {
+  border-bottom: none;
+}
+
+.sidebar .active {
+  background-color: #33FFA2 !important;
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+/* --- Code Blocks --- */
+pre.sourceCode {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  border-left: 6px solid #33FFA2;
+  border-radius: 0;
+}
+
+code {
+  color: #000000;
+  background-color: #33FFA2;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-weight: normal;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 2px solid #000000;
+}
+
+th {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #000000;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+}
+
+tr:nth-child(even) td {
+  background-color: #fcfcfc;
+}
+
+/* Hover effect on table rows */
+tr:hover td {
+  background-color: #33FFA2;
+  color: #000000;
+}
